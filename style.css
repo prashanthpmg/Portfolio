@@ -1,0 +1,191 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+    background: #121212;
+  }
+  
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  header ul li a {
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  header ul li a:hover {
+    color: #00ffb3;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .btn {
+    padding: 12px 28px;
+    background-color: #00ffb3;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #00c289;
+  }
+  
+  /* Sections */
+  section {
+    padding: 80px 10%;
+    text-align: center;
+  }
+  
+  .about p, .skills p {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .skill {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: transform 0.3s;
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Projects */
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .project-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 255, 179, 0.2);
+  }
+  
+  /* Contact */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2a2a2a;
+    color: #fff;
+  }
+  
+  button[type="submit"] {
+    background: #00ffb3;
+    color: #000;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #00c289;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #101010;
+    font-size: 14px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
